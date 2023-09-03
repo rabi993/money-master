@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <title>Money Master Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-cyan-600 text-7xl font-bold text-center pt-8 pb-4">Money Master</h1>
+    </header>
+    <main>
+        <section class=" row col-md-12 bg-cyan-100" >
+            <div class="col-md-7 p-8">
+                <img src="money-master.png" alt="">
+            </div>
+            <div class="col-md-5 pr-15 pt-8 text-center">
+                <h3 class="text-cyan-600 text-2xl font-semibold text-center pt-2">Income</h3>
+                <p class="text-center pt-3 pb-2">Income </p>
+
+                <input id="income-field" class=" px-3 rounded-lg" type="text" name=""  placeholder="$">
+
+
+                <h3 class="text-cyan-600 text-2xl font-semibold text-center pt-3">Expenses</h3>
+                <p class="text-center pt-3">Food <input id="food-field" class=" px-3 rounded-lg" type="text" name=""  placeholder="$"></p>
+                
+                <p class="text-center pt-3">Rent <input id="rent-field" class=" px-3 rounded-lg" type="text" name=""  placeholder="$"></p>
+                <p class="text-center pt-3">Clothes <input id="clothes-field" class=" px-3 rounded-lg pb" type="text" name=""  placeholder="$"></p>
+
+                <button id="btn-calculate1" class="bg-cyan-600 text-3xl font-semibold rounded-lg p-2.5 mt-4" type="submit">Calculate</button>
+                <h3 class="text-cyan-600 text-2xl font-semibold text-center pt-2">Total Expenses: <span id="total-expenses">00</span></h3>
+                <h3 class="text-cyan-600 text-2xl font-semibold text-center pt-2">Balance: <span id="balance">00</span></h3>
+
+                <p class="text-center pt-5">Save <input id="save-field" class=" px-3 rounded-lg" type="text" name=""  placeholder=""> % <button id="btn-calculate2" class="bg-cyan-600 text-xl font-semibold rounded-lg p-1 " type="submit">Save</button></p>
+
+                <h3 class="text-cyan-600 text-2xl font-semibold text-center pt-4">Saving Amount: <span id="save-amount">00</span></h3>
+                <h3 class="text-cyan-600 text-2xl font-semibold text-center pt-2">Remaining Balance: <span id="remaining-balance">00</span></h3>
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <script src="js/common.js"></script>
+    <script src="js/income.js"></script>
+</body>
+</html>
